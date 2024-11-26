@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    
+    <div x-data="{ open: false }">
+        <button x-on:click="open = ! open" class="bg-slate-600">Toggle Dropdown</button>
+     
+        <div x-show.important="open">
+            Dropdown Contents...
+        </div>
+    </div>
+<script src="{% static 'src/js/bundle.js' %}"></script>
+</body>
+</html>
