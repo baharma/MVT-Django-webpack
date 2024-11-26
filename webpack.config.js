@@ -22,5 +22,5 @@ module.exports = {
     contentBase: './apps/static', // Serve static files from this directory
     hot: true,  // Enable hot module replacement
   },
-  mode: 'development', // Development mode
+  mode: 'development', 
 };
